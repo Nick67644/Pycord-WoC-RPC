@@ -6,4 +6,4 @@ Pycord and World of Coding RPC, thought I would just release this one on my prof
 * Run Node . (In Terminal)
 
 If you want to try and update the application (Different picture etc...) you will have to make a new application within the discord dev portal
-*https://ptb.discord.com/developers/applications (Dev portal)
+* https://ptb.discord.com/developers/applications (Dev portal)
