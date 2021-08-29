@@ -1,7 +1,7 @@
 # Pycord-WoC-RPC
 Pycord and World of Coding RPC, thought I would just release this one on my profile rather then WoC org.
 
-* Install Nord.Js
+* Install Node.Js
 * Run npm i discord-rpc (In Terminal)
 * Run Node . (In Terminal)
 
