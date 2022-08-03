@@ -1,25 +1,24 @@
 
 const RPC = require('discord-rpc');
+const config = require('./config');
 const client = new RPC.Client({ transport: 'ipc' });
+
 client.on('ready', () =>
 {
   client.request('SET_ACTIVITY', {
       pid: process.pid,
       activity: {
           assets: {
-              large_image: 'woc', //woc
-              small_image: 'pycord_logo',
-              small_text: 'Pycord!',
-              large_text: "World of Coding!",
+              large_image: config.largeImage, //woc
+              large_text: config.largeText,
           },
 
-          details: '10k+ CODING HELP SERVER!', //Pycord new Discord.py!
+          details: config.description, //Pycord new Discord.py!
           buttons: [
-              { label: 'Join World of Coding!', url: 'https://discord.gg/pkShK9ax2X' }, //woc (Partner of Pycord)
-              { label: 'Join Pycord!', url: 'https://discord.gg/dDvdeA8Jqz'} //Pycord
+              { label: config.buttonLabel, url: config.invite }, //woc (Partner of Pycord)
           ]
       }
   });
-  console.log('started!');
+  console.log('Activity started!');
 });
-client.login({ clientId: '803978215466074122' });
+client.login({ clientId: config.clientId });
