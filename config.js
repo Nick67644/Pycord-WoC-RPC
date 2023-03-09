@@ -4,9 +4,9 @@ module.exports = {
       Use default settings if you want to have WoC on your status.
     */
     clientId: "803978215466074122", // ID of your Discord App
-    description: "10k+ CODING HELP SERVER!", // Description to show under the activity title
+    description: "30k+ CODING HELP SERVER!", // Description to show under the activity title
     buttonLabel: "Join World of Coding!", // The label of the button
-    invite: "https://discord.gg/pkShK9ax2X", // Discord invite for the button to join
+    invite: "https://discord.gg/program", // Discord invite for the button to join
 
     /*
       These values need to be filled from the Discord dev portal.
